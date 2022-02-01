@@ -1,0 +1,321 @@
+.rotate-paragraph {
+  width: 250px;
+  height: 250px;
+  transform: rotate(90deg);
+}
+
+.rotate-list-clockwise {
+  transform: rotate(12deg);
+  width: 100px;
+  background-color: red;
+  color: white;
+}
+
+.rotate-list-counter-clockwise {
+  spinny width: 100px;
+  background-color: red;
+  color: white;
+}
+
+.rotate-list-items li {
+  width: 100px;
+  text-align: right;
+}
+
+.rotate-list-items li:nth-child(1) {
+  transform: rotate(-10deg);
+  background-color: yellow;
+}
+
+.rotate-list-items li:nth-child(2) {
+  transform: rotate(2deg);
+  background-color: blue;
+  color: white;
+}
+
+.rotate-list-items li:nth-child(3) {
+  transform: rotate(10deg);
+  background-color: red;
+}
+
+.rotate-image-1 {
+  transform: rotate(-10deg);
+}
+
+.rotate-image-2 {
+  transform: rotate(60deg);
+}
+
+.rotate-table {
+  position: relative;
+  left: 50px;
+  transform: rotate(15deg);
+}
+
+.rotate-table tr:nth-child(1) {
+  background-color: black;
+  color: white;
+}
+
+.rotate-table tr:nth-child(n+2) {
+  background-color: yellow;
+}
+
+.rotate-table tr:nth-child(n+5) {
+  background-color: blue;
+  color: white;
+}
+
+.rotate-table tr:nth-child(n+8) {
+  background-color: red;
+}
+
+.rotate-table tr:nth-child(n+11) {
+  background-color: green;
+  color: white;
+}
+
+.gradients-linear-1 {
+  background: linear-gradient(yellow, red);
+  width: 200px;
+  height: 200px;
+}
+
+.gradients-linear-2 {
+  background: linear-gradient(blue, cyan);
+  width: 200px;
+  height: 200px;
+}
+
+.gradients-radial-1 {
+  background: radial-gradient(yellow, green);
+  width: 200px;
+  height: 200px;
+}
+
+.gradients-radial-2 {
+  background: radial-gradient(cyan, magenta);
+  width: 200px;
+  height: 200px;
+}
+
+.gradients-positioned-1 {
+  background: radial-gradient(at top left, blue, red);
+  width: 200px;
+  height: 200px;
+  color: white;
+}
+
+.gradients-positioned-2 {
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient() */
+  background: radial-gradient(circle at 100%, #333, #333 50%, #eee 75%, #333 75%);
+  width: 200px;
+  height: 200px;
+  color: white;
+}
+
+.animation-keyframes-1 {
+  position: relative;
+  top: 0px;
+  animation-duration: 7s;
+  animation-name: slidein;
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  color: white;
+}
+
+@keyframes slidein {
+  from {
+    position: relative;
+    top: 0px;
+    font-size: 100%;
+    margin-left: 100%;
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    color: black;
+  }
+  50% {
+    position: relative;
+    top: -200px;
+    font-size: 300%;
+    margin-left: 25%;
+    width: 400px;
+    height: 400px;
+    background-color: blue;
+    color: white;
+  }
+  to {
+    position: relative;
+    top: 0px;
+    font-size: 100%;
+    margin-left: 0%;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    color: white;
+  }
+}
+
+.animation-keyframes-2 {
+  position: relative;
+  top: 0px;
+  animation-duration: 4s;
+  animation-name: spinny;
+  width: 120px;
+  height: 40px;
+  background-color: lime;
+  color: magenta;
+  text-align: center;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes spinny {
+  from {
+    transform: rotate(-15deg);
+  }
+  to {
+    transform: rotate(375deg)
+  }
+}
+
+.flex-container-justify-center {
+  border-width: 5px;
+  border-color: black;
+  border-style: solid;
+  display: flex;
+  justify-content: center;
+}
+
+.flex-container-justify-end {
+  border-width: 5px;
+  border-color: black;
+  border-style: solid;
+  display: flex;
+  justify-content: end;
+}
+
+.flex-container-justify-space-around {
+  border-width: 5px;
+  border-color: black;
+  border-style: solid;
+  display: flex;
+  justify-content: space-around;
+}
+
+.flex-container-justify-space-between {
+  border-width: 5px;
+  border-color: black;
+  border-style: solid;
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-container-align-start {
+  border-width: 5px;
+  border-color: black;
+  border-style: solid;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.flex-container-align-center {
+  border-width: 5px;
+  border-color: black;
+  border-style: solid;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.flex-container-align-end {
+  border-width: 5px;
+  border-color: black;
+  border-style: solid;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+
+.flex-container-stretch {
+  border-width: 5px;
+  border-color: black;
+  border-style: solid;
+  display: flex;
+}
+
+.flex-container-stretch>.flex-box {
+  flex-basis: 100%;
+}
+
+.flex-box {
+  border: 5px gray solid;
+  margin: 10px;
+  padding: 10px;
+}
+
+.flex-box-1 {
+  background-color: yellow;
+}
+
+.flex-box-2 {
+  background-color: blue;
+  color: white;
+}
+
+.flex-box-3 {
+  background-color: red;
+  color: white;
+}
+
+.media-queries {
+  display: flex;
+  font-size: 20px;
+}
+
+.sidebar {
+  flex-basis: 30%;
+  background-color: white;
+  color: black;
+}
+
+.body {
+  flex-basis: 70%;
+  background-color: red;
+  color: white;
+}
+
+@media (max-width: 1200px) {
+  .media-queries {
+    font-size: 16px;
+  }
+  .sidebar {
+    flex-basis: 30%;
+    background-color: lightskyblue;
+    color: gray;
+  }
+  .body {
+    flex-basis: 70%;
+    background-color: salmon;
+    color: gray;
+  }
+}
+
+@media (max-width: 600px) {
+  .media-queries {
+    flex-direction: column;
+    font-size: 14px;
+  }
+  .sidebar {
+    background-color: blue;
+    color: white;
+  }
+  .body {
+    background-color: pink;
+    color: black;
+  }
+}
