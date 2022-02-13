@@ -1,57 +1,87 @@
+:root {
+  --wd-light-grey: #5b656b;
+  --wd-mid-grey: rgb(47, 51, 54);
+  --wd-dark-grey: #1e2023;
+  --wd-interactive-blue: rgb(29, 161, 242);
+}
+
+.wd-color-light-grey {
+  color: var(--wd-light-grey);
+}
+
+.wd-color-mid-grey {
+  color: var(--wd-mid-grey);
+}
+
+.wd-color-dark-grey {
+  color: var(--wd-dark-grey);
+}
+
+.wd-color-interactive-blue {
+  color: var(--wd-interactive-blue);
+}
+
 body {
   background-color: black;
   color: white;
-  margin: 0;
-  padding: 0.5em 1em;
   font-family: sans-serif;
 }
 
-.wd-explore-search {
+#wd-explore-search {
   display: flex;
   align-items: center;
 }
 
-.wd-explore-search input {
-  background-color: #1E2023;
+#wd-explore-search input,
+#wd-explore-search input:focus,
+#wd-explore-search .input-group-text {
+  background-color: var(--wd-dark-grey);
   color: white;
-  border-radius: 1em;
   border: none;
+}
+
+#wd-explore-search .input-group-text {
   padding: 0.5em 1.5em;
+  border-radius: 1em 0 0 1em;
 }
 
-.wd-explore-search svg {
-  margin-left: 0.75em;
-  width: 1.5em;
-  height: 1.5em;
+#wd-explore-search input,
+#wd-explore-search input:focus {
+  padding: 0.5em 0;
+  margin-right: 2em;
+  border-radius: 0 1em 1em 0;
 }
 
-.wd-explore-tabs ul {
+#wd-explore-tabs ul {
   padding: 0;
-  border-bottom: 1px solid rgb(47, 51, 54);
+  border-bottom: 1px solid var(--wd-mid-grey);
 }
 
-.wd-explore-tabs li {
+#wd-explore-tabs li {
   list-style-type: none;
   display: inline-block;
 }
 
-.wd-explore-tabs li:not(:first-child) {
+#wd-explore-tabs li:not(:first-child) {
   margin-left: 1em;
 }
 
-.wd-explore-tabs a,
-.wd-explore-tabs a:visited {
+#wd-explore-tabs a,
+#wd-explore-tabs a:visited,
+#wd-explore-tabs .nav-tabs, 
+#wd-explore-tabs .nav-tabs:visited {
   font-size: 15px;
-  color: #5B656B;
+  color: var(--wd-light-grey);
   text-decoration: none;
-  padding-bottom: 0.5em;
   display: inline-block;
+  background-color: inherit;
+  border: inherit;
 }
 
-.wd-explore-tabs #active-tab,
-.wd-explore-tabs #active-tab:visited {
-  color: rgb(29, 161, 242);
-  border-bottom: 3px solid rgb(29, 161, 242);
+#wd-explore-tabs .active,
+#wd-explore-tabs .active:visited {
+  color: white;
+  border-bottom: 3px solid var(--wd-interactive-blue);
 }
 
 .wd-explore-suggested-posts__post {
@@ -59,7 +89,7 @@ body {
   align-items: flex-start;
   justify-content: space-between;
   padding: 0 1em;
-  border: 1px solid rgb(47, 51, 54);
+  border: 1px solid var(--wd-mid-grey);
 }
 
 .wd-explore-suggested-posts__post img {
