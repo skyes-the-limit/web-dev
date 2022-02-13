@@ -151,6 +151,7 @@ body {
     linear-gradient(to top, black, rgba(0,0,0,0.85) 20%, transparent 50%),
     url("https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg");
   background-size: cover;
+  background-position: center;
   border-width: 1px 0;
   border-style: solid;
   border-color: var(--wd-mid-grey);
@@ -173,6 +174,7 @@ body {
   height: 4em;
   border-radius: 0.5em;
   object-fit: cover;
+  object-position: center;
 }
 
 .wd-explore-feed__annotations {
