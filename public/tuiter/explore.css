@@ -5,6 +5,14 @@
   --wd-interactive-blue: rgb(29, 161, 242);
 }
 
+p {
+  margin: 0;
+}
+
+.wd-color-white {
+  color: white;
+}
+
 .wd-color-light-grey {
   color: var(--wd-light-grey);
 }
@@ -29,7 +37,7 @@ body {
 
 #tuiter-nav .list-group {
   max-width: fit-content;
-  margin-left: auto;
+  margin: 1em 0 0 auto;
 }
 
 #tuiter-nav .list-group-item {
@@ -44,6 +52,14 @@ body {
   font-weight: 700;
 }
 
+#tuiter-nav .btn-primary {
+  border-radius: 2em;
+  background-color: var(--wd-interactive-blue);
+  padding: 0.5em 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+
 #tuiter-nav i {
   width: 1em;
   height: 1em;
@@ -51,9 +67,17 @@ body {
   text-align: center;
 }
 
+#wd-explore-body {
+  border-width: 0 1px;
+  border-style: solid;
+  border-color: var(--wd-mid-grey);
+  padding: 0;
+}
+
 #wd-explore-search {
   display: flex;
   align-items: center;
+  padding: 1em 1em 0;
 }
 
 #wd-explore-search input,
@@ -112,17 +136,33 @@ body {
   border-bottom: 3px solid var(--wd-interactive-blue);
 }
 
+#wd-explore-featured {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+  height: 400px;
+  padding: 1em;
+  background-image:
+    linear-gradient(to top, black, rgba(0,0,0,0.85) 20%, transparent 50%),
+    url("https://www.koimoi.com/wp-content/new-galleries/2021/09/coldplay-bts-maiden-collaboration-my-universe-to-release-on-sep-24001.jpg");
+  background-size: cover;
+  border-width: 1px 0;
+  border-style: solid;
+  border-color: var(--wd-mid-grey);
+}
+
 .wd-explore-feed__post {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   padding: 0 1em;
-  border: 1px solid var(--wd-mid-grey);
+  margin-top: 1em;
 }
 
 .wd-explore-feed__post img {
-  width: 100px;
-  height: 100px;
+  width: 5em;
+  height: 5em;
   border-radius: 1em;
   margin: 0.75em 0 0.75em 2em;
   object-fit: cover;
