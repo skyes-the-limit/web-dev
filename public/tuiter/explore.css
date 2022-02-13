@@ -27,6 +27,30 @@ body {
   font-family: sans-serif;
 }
 
+#tuiter-nav .list-group {
+  max-width: fit-content;
+  margin-left: auto;
+}
+
+#tuiter-nav .list-group-item {
+  background-color: black;
+  color: white;
+  font-weight: 400;
+  padding: 0.75em 1em;
+}
+
+#tuiter-nav .active {
+  border: none;
+  font-weight: 700;
+}
+
+#tuiter-nav i {
+  width: 1em;
+  height: 1em;
+  margin-right: 0.5em;
+  text-align: center;
+}
+
 #wd-explore-search {
   display: flex;
   align-items: center;

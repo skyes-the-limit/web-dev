@@ -5,15 +5,51 @@
 </head>
 
 <body>
-  <div class="row">
-    <div class="col-2 col-sm-3 col-md-4 col-lg-2 col-xl-2 col-xxl-2">
-      <p class="text-end">Tuiter Nav</p>
+  <div class="row mt-4">
+    <div id="tuiter-nav" class="col-2 col-sm-3 col-md-4 col-lg-2 col-xl-2 col-xxl-2">
+      <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action">
+          <i class="fab fa-twitter fa-lg"></i>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <i class="fa fa-home"></i>
+          Home
+        </a>
+        <a href="#" class="list-group-item list-group-item-action active">
+          <i class="fa fa-hashtag"></i>
+          Explore
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <i class="fa fa-bell"></i>
+          Notifications
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <i class="fas fa-envelope"></i>
+          Messages
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <i class="fas fa-bookmark"></i>
+          Bookmarks
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <i class="fas fa-list"></i>
+          Lists
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <i class="fas fa-user"></i>
+          Profile
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <i class="fas fa-ellipsis-h"></i>
+          More
+        </a>
+      </div>
     </div>
     <div
       id="explore-body"
       class="col-10 col-sm-9 col-md-8 col-lg-7 col-xl-7 col-xxl-8"
     >
-      <div id="wd-explore-search" class="mt-2">
+      <div id="wd-explore-search">
         <div class="input-group">
           <span class="input-group-text">
             <i class="fa fa-search wd-color-light-grey"></i>
@@ -139,7 +175,7 @@
       let allTabs = document.querySelectorAll(".nav-link");
       allTabs.forEach((element) => element.classList.remove("active"));
 
-      var hash = window.location.hash;
+      let hash = window.location.hash;
       document.querySelector(`a[href='${hash}'`).classList.add("active");
     });
   </script>
