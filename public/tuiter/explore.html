@@ -5,126 +5,134 @@
 </head>
 
 <body>
-  <div class="container">
-    <div id="wd-explore-search" class="mt-2">
-      <div class="input-group">
-        <span class="input-group-text">
-          <i class="fa fa-search wd-color-light-grey"></i>
-        </span>
-        <input type="text" class="form-control" placeholder="Search Tuiter" />
-      </div>
-      <a href="explore-settings.html">
-        <i class="fa fa-cog fa-2x wd-color-interactive-blue"></i>
-      </a>
+  <div class="row">
+    <div class="col-2 col-sm-3 col-md-4 col-lg-2 col-xl-1 col-xxl-1">
+      <p class="text-end">Tuiter Nav</p>
     </div>
+    <div id="explore-body" class="col-10 col-sm-9 col-md-8 col-lg-7 col-xl-8 col-xxl-9">
+      <div id="wd-explore-search" class="mt-2">
+        <div class="input-group">
+          <span class="input-group-text">
+            <i class="fa fa-search wd-color-light-grey"></i>
+          </span>
+          <input type="text" class="form-control" placeholder="Search Tuiter" />
+        </div>
+        <a href="explore-settings.html">
+          <i class="fa fa-cog fa-2x wd-color-interactive-blue"></i>
+        </a>
+      </div>
 
-    <div id="wd-explore-tabs" class="mt-2">
-      <ul class="nav nav-tabs">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">For you</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Trending</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">COVID-19</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">News</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Sports</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Entertainment</a>
-        </li>
-      </ul>
+      <div id="wd-explore-tabs" class="mt-2">
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">For you</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Trending</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">COVID-19</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sports</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Entertainment</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="wd-explore-suggested-posts">
+        <div class="wd-explore-suggested-posts__post">
+          <div>
+            <p class="wd-explore-suggested-posts__annotations">
+              Trending in Science
+            </p>
+            <p class="wd-explore-suggested-posts__title">Starship</p>
+            <p class="wd-explore-suggested-posts__tweet-count">55.5K Tweets</p>
+          </div>
+        </div>
+
+        <div class="wd-explore-suggested-posts__post">
+          <div>
+            <p class="wd-explore-suggested-posts__annotations">
+              <span>Sports</span>
+              <span>&nbsp•&nbsp</span>
+              <span>Trending</span>
+            </p>
+            <p class="wd-explore-suggested-posts__title">Joe Rogan</p>
+            <p class="wd-explore-suggested-posts__tweet-count">5,218 Tweets</p>
+          </div>
+        </div>
+
+        <div class="wd-explore-suggested-posts__post">
+          <div>
+            <p class="wd-explore-suggested-posts__annotations">
+              <span class="wd-explore-suggested-posts__author"
+                >The New York Times</span
+              >
+              <span>&nbsp•&nbsp</span>
+              <span>Yesterday</span>
+            </p>
+            <p class="wd-explore-suggested-posts__title">
+              CNN's Cuomo conundrum: A star anchor with a brother in trouble
+            </p>
+          </div>
+          <img
+            src="https://static01.nyt.com/images/2020/04/06/business/04chris-cuomo/0405JPBENSMITH-print-superJumbo-v2.jpg"
+          />
+        </div>
+
+        <div class="wd-explore-suggested-posts__post">
+          <div>
+            <p class="wd-explore-suggested-posts__annotations">
+              <span>COVID-19</span>
+              <span>&nbsp•&nbsp</span>
+              <span>LIVE</span>
+            </p>
+            <p class="wd-explore-suggested-posts__title">
+              COVID-19: News and updates for Massachusetts
+            </p>
+          </div>
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt7BQMaj44Bryox4Zj8cGHcsWb1NCYlt-t2g&usqp=CAU"
+          />
+        </div>
+
+        <div class="wd-explore-suggested-posts__post">
+          <div>
+            <p class="wd-explore-suggested-posts__annotations">
+              <span class="wd-explore-suggested-posts__author"
+                >Bloomberg Opinon</span
+              >
+              <span>&nbsp•&nbsp</span>
+              <span>Yesterday</span>
+            </p>
+            <p class="wd-explore-suggested-posts__title">
+              Thinking about getting a booster? Read this first.
+            </p>
+          </div>
+          <img
+            src="https://i2p4a4i8.rocketcdn.me/wp-content/uploads/2019/05/injection-1674900_1280.png"
+          />
+        </div>
+
+        <div class="wd-explore-suggested-posts__post">
+          <div>
+            <p class="wd-explore-suggested-posts__annotations">
+              <span>Trending in United States</span>
+            </p>
+            <p class="wd-explore-suggested-posts__title">Wonder Bread</p>
+            <p class="wd-explore-suggested-posts__tweet-count">1,259 Tweets</p>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <div class="wd-explore-suggested-posts">
-      <div class="wd-explore-suggested-posts__post">
-        <div>
-          <p class="wd-explore-suggested-posts__annotations">
-            Trending in Science
-          </p>
-          <p class="wd-explore-suggested-posts__title">Starship</p>
-          <p class="wd-explore-suggested-posts__tweet-count">55.5K Tweets</p>
-        </div>
-      </div>
-
-      <div class="wd-explore-suggested-posts__post">
-        <div>
-          <p class="wd-explore-suggested-posts__annotations">
-            <span>Sports</span>
-            <span>&nbsp•&nbsp</span>
-            <span>Trending</span>
-          </p>
-          <p class="wd-explore-suggested-posts__title">Joe Rogan</p>
-          <p class="wd-explore-suggested-posts__tweet-count">5,218 Tweets</p>
-        </div>
-      </div>
-
-      <div class="wd-explore-suggested-posts__post">
-        <div>
-          <p class="wd-explore-suggested-posts__annotations">
-            <span class="wd-explore-suggested-posts__author"
-              >The New York Times</span
-            >
-            <span>&nbsp•&nbsp</span>
-            <span>Yesterday</span>
-          </p>
-          <p class="wd-explore-suggested-posts__title">
-            CNN's Cuomo conundrum: A star anchor with a brother in trouble
-          </p>
-        </div>
-        <img
-          src="https://static01.nyt.com/images/2020/04/06/business/04chris-cuomo/0405JPBENSMITH-print-superJumbo-v2.jpg"
-        />
-      </div>
-
-      <div class="wd-explore-suggested-posts__post">
-        <div>
-          <p class="wd-explore-suggested-posts__annotations">
-            <span>COVID-19</span>
-            <span>&nbsp•&nbsp</span>
-            <span>LIVE</span>
-          </p>
-          <p class="wd-explore-suggested-posts__title">
-            COVID-19: News and updates for Massachusetts
-          </p>
-        </div>
-        <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt7BQMaj44Bryox4Zj8cGHcsWb1NCYlt-t2g&usqp=CAU"
-        />
-      </div>
-
-      <div class="wd-explore-suggested-posts__post">
-        <div>
-          <p class="wd-explore-suggested-posts__annotations">
-            <span class="wd-explore-suggested-posts__author"
-              >Bloomberg Opinon</span
-            >
-            <span>&nbsp•&nbsp</span>
-            <span>Yesterday</span>
-          </p>
-          <p class="wd-explore-suggested-posts__title">
-            Thinking about getting a booster? Read this first.
-          </p>
-        </div>
-        <img
-          src="https://i2p4a4i8.rocketcdn.me/wp-content/uploads/2019/05/injection-1674900_1280.png"
-        />
-      </div>
-
-      <div class="wd-explore-suggested-posts__post">
-        <div>
-          <p class="wd-explore-suggested-posts__annotations">
-            <span>Trending in United States</span>
-          </p>
-          <p class="wd-explore-suggested-posts__title">Wonder Bread</p>
-          <p class="wd-explore-suggested-posts__tweet-count">1,259 Tweets</p>
-        </div>
-      </div>
+    <div class="d-none d-lg-block col-lg-3 col-xl-3 col-xxl-2">
+      Who to follow
     </div>
   </div>
 </body>
