@@ -84,7 +84,7 @@ body {
   border-bottom: 3px solid var(--wd-interactive-blue);
 }
 
-.wd-explore-suggested-posts__post {
+.wd-explore-feed__post {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -92,7 +92,7 @@ body {
   border: 1px solid var(--wd-mid-grey);
 }
 
-.wd-explore-suggested-posts__post img {
+.wd-explore-feed__post img {
   width: 100px;
   height: 100px;
   border-radius: 1em;
@@ -100,22 +100,22 @@ body {
   object-fit: cover;
 }
 
-.wd-explore-suggested-posts__annotations {
+.wd-explore-feed__annotations {
   font-size: 13px;
   color: rgb(110, 118, 125);
 }
 
-.wd-explore-suggested-posts__author {
+.wd-explore-feed__author {
   color: white;
   font-weight: 500;
 }
 
-.wd-explore-suggested-posts__title {
+.wd-explore-feed__title {
   font-size: 16px;
   font-weight: 600;
 }
 
-.wd-explore-suggested-posts__tweet-count {
+.wd-explore-feed__tweet-count {
   font-size: 13px;
   color: rgb(110, 118, 125);
 }
