@@ -68,7 +68,7 @@ body {
 
 #wd-explore-tabs a,
 #wd-explore-tabs a:visited,
-#wd-explore-tabs .nav-tabs, 
+#wd-explore-tabs .nav-tabs,
 #wd-explore-tabs .nav-tabs:visited {
   font-size: 15px;
   color: var(--wd-light-grey);
@@ -76,6 +76,10 @@ body {
   display: inline-block;
   background-color: inherit;
   border: inherit;
+}
+
+#wd-explore-tabs a:hover {
+  color: white;
 }
 
 #wd-explore-tabs .active,
