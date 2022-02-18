@@ -11,7 +11,7 @@ import ExploreComponent from "./ExploreComponent.js";
           id="tuiter-nav"
           class="col-2 col-sm-3 col-md-2 col-lg-2 col-xl-2 col-xxl-2"
         >
-          ${NavigationSidebar()}
+          ${NavigationSidebar("Explore")}
         </div>
         <div
           id="wd-explore-body"

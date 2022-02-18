@@ -10,7 +10,7 @@ import WhoToFollowList from "../WhoToFollowList/index.js";
           id="tuiter-nav"
           class="col-2 col-sm-3 col-md-2 col-lg-2 col-xl-2 col-xxl-2"
         >
-          ${NavigationSidebar()}
+          ${NavigationSidebar("Home")}
         </div>
         <div
           id="wd-home-body"
