@@ -1,14 +1,14 @@
 const NavigationSidebar = () => {
   return (`
     <div class="list-group">
-      <a href="#" class="list-group-item list-group-item-action">
+      <a href="../HomeScreen/index.html" class="list-group-item list-group-item-action">
         <i class="fab fa-twitter fa-lg"></i>
       </a>
-      <a href="#" class="list-group-item list-group-item-action">
+      <a href="../HomeScreen/index.html" class="list-group-item list-group-item-action">
         <i class="fa fa-home"></i>
         <span class="d-none d-xl-inline-block">Home</span>
       </a>
-      <a href="#" class="list-group-item list-group-item-action active">
+      <a href="../ExploreScreen/index.html" class="list-group-item list-group-item-action active">
         <i class="fa fa-hashtag"></i>
         <span class="d-none d-xl-inline-block">Explore</span>
       </a>
