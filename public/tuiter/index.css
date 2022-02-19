@@ -134,3 +134,39 @@ body {
   border-radius: 2em;
   font-size: 14px;
 }
+
+.wd-post-summary__post {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1em;
+  margin-top: 1em;
+}
+
+.wd-post-summary__post:last-child {
+  margin-bottom: 1em;
+}
+
+.wd-post-summary__image {
+  width: 4em;
+  height: 4em;
+  border-radius: 0.5em;
+  object-fit: cover;
+  object-position: center;
+}
+
+.wd-post__annotations {
+  font-size: 13px;
+  color: rgb(110, 118, 125);
+}
+
+.wd-post__author {
+  font-size: 14px;
+  color: white;
+  font-weight: 500;
+}
+
+.wd-post__title {
+  font-size: 14px;
+  font-weight: 600;
+}

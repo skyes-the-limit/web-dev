@@ -1,19 +1,20 @@
-const PostSummaryItem = ({image, time, title, topic, userName}) => {
+const PostSummaryItem = ({ image, time, title, topic, userName }) => {
   return (`
-    <div class="wd-explore-feed__post">
+    <div class="wd-post-summary__post">
       <div>
-        <p class="wd-explore-feed__annotations">
+        <p class="wd-post__annotations">
           <span>${topic}</span>
         </p>
-        <p class="wd-explore-feed__annotations">
-          <span class="wd-explore-feed__author">${userName}</span>
+        <p class="wd-post__annotations">
+          <span class="wd-post__author">${userName}</span>
           <span>&nbsp•&nbsp</span>
           <span>${time}</span>
         </p>
-        <p class="wd-explore-feed__title">${title}</p>
+        <p class="wd-post__title">${title}</p>
       </div>
       <img
         src="${image}"
+        class="wd-post-summary__image"
       />
     </div>
   `);
