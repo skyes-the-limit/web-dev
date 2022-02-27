@@ -3,7 +3,7 @@ import posts from './posts.js'
 
 const PostSummaryList = () => {
   return (`
-    <div>
+    <div id="wd-explore-post-list">
       ${posts.map(post => {
           return (PostSummaryItem(post));
         }).join('')

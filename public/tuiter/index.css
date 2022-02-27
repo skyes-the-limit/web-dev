@@ -1,7 +1,7 @@
 :root {
   --wd-light-grey: #5b656b;
   --wd-mid-grey: rgb(47, 51, 54);
-  --wd-dark-grey: #1e2023;
+  --wd-dark-grey: #1F1F1F;
   --wd-interactive-blue: rgb(29, 161, 242);
 }
 
@@ -45,14 +45,23 @@ body {
 }
 
 #tuiter-nav .list-group-item {
-  background-color: black;
+  background-color: var(--wd-dark-grey);
+  border: none;
   color: white;
   font-weight: 300;
   padding: 0.75em 1em;
 }
 
+#tuiter-nav .list-group-item:first-of-type {
+  border-radius: 0.5em 0.5em 0 0;
+}
+
+#tuiter-nav .list-group-item:last-of-type {
+  border-radius: 0 0 0.5em 0.5em;
+}
+
 #tuiter-nav .active {
-  border: none;
+  background-color: var(--wd-interactive-blue);
   font-weight: 700;
 }
 
@@ -128,8 +137,8 @@ body {
 }
 
 .tuiter-follow-recommendation-item .btn {
-  color: black;
-  background-color: white;
+  color: white;
+  background-color: var(--wd-interactive-blue);
   padding: 0.5em 1.5em;
   border-radius: 2em;
   font-size: 14px;
@@ -139,12 +148,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 1em;
-  margin-top: 1em;
+  padding: 1em 1em 0;
 }
 
 .wd-post-summary__post:last-child {
-  margin-bottom: 1em;
+  padding-bottom: 1em;
 }
 
 .wd-post-summary__image {

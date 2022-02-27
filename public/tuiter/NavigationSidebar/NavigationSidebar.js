@@ -11,15 +11,17 @@ const NavItem = (page, activePage) => {
 
 const NavigationSidebar = (activePage) => {
   return (`
-    <div class="list-group">
-      <a href="../HomeScreen/index.html" class="list-group-item list-group-item-action">
-        <i class="fab fa-twitter fa-lg"></i>
-      </a>
-      ${pages.map(page => {
-          return (NavItem(page, activePage));
-        }).join('')
-      }
-      <button type="button" class="btn btn-primary btn-block rounded-pill mt-2">Tuit</button>
+    <div>
+      <div class="list-group">
+        <a href="../HomeScreen/index.html" class="list-group-item list-group-item-action">
+          <i class="fab fa-twitter fa-lg"></i>
+        </a>
+        ${pages.map(page => {
+            return (NavItem(page, activePage));
+          }).join('')
+        }
+        <button type="button" class="btn btn-primary btn-block rounded-pill mt-2">Tuit</button>
+      </div>
     </div>
   `);
 }

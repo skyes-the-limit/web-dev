@@ -2,7 +2,7 @@ const pages = [
   {
     title: "Home",
     href: "../HomeScreen/index.html",
-    iconClasses: "fab fa-twitter"
+    iconClasses: "fa-solid fa-house"
   },
   {
     title: "Explore",
