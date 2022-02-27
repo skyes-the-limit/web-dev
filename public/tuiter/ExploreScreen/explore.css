@@ -1,0 +1,97 @@
+#wd-explore-body {
+  padding: 0;
+}
+
+#wd-explore-search {
+  display: flex;
+  align-items: center;
+  padding: 1em 1em 0;
+}
+
+#wd-explore-search input,
+#wd-explore-search input:focus,
+#wd-explore-search .input-group-text {
+  background-color: white;
+  color: white;
+  border: none;
+}
+
+#wd-explore-search .input-group-text {
+  padding: 0.5em 1.5em;
+  border-radius: 1em 0 0 1em;
+}
+
+#wd-explore-search input,
+#wd-explore-search input:focus {
+  padding: 0.5em 0;
+  margin-right: 2em;
+  border-radius: 0 1em 1em 0;
+}
+
+#wd-explore-search i {
+  color: var(--wd-interactive-blue)
+}
+
+#wd-explore-tabs .nav-tabs {
+  margin: 0;
+  padding: 0;
+  border: none;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+#wd-explore-tabs .nav-item {
+  padding: 0;
+  list-style-type: none;
+  display: inline-block;
+}
+
+#wd-explore-tabs .nav-link,
+#wd-explore-tabs .nav-link:visited {
+  font-size: 15px;
+  color: var(--wd-light-grey);
+  text-decoration: none;
+  background-color: inherit;
+  border: inherit;
+  padding: 0.5em 1em;
+}
+
+#wd-explore-tabs .nav-link:hover {
+  color: white;
+}
+
+#wd-explore-tabs .active,
+#wd-explore-tabs .active:visited {
+  background-color: var(--wd-interactive-blue);
+  color: white;
+}
+
+#wd-explore-featured {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+  height: 32em;
+  margin-top: 1em;
+  padding: 1em;
+  background-image: linear-gradient(
+      to top,
+      black,
+      rgba(0, 0, 0, 0.85) 20%,
+      transparent 50%
+    ),
+    url("https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg");
+  background-size: cover;
+  background-position: center;
+  border-width: 1px 0;
+  border-style: solid;
+  border-color: var(--wd-mid-grey);
+}
+
+#wd-explore-post-list {
+  background-color: var(--wd-mid-grey);
+  margin-top: 1em;
+  border-radius: 0.5em;
+}

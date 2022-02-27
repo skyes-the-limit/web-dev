@@ -1,0 +1,44 @@
+const pages = [
+  {
+    title: "Home",
+    href: "../HomeScreen/index.html",
+    iconClasses: "fa-solid fa-house"
+  },
+  {
+    title: "Explore",
+    href: "../ExploreScreen/index.html",
+    iconClasses: "fa fa-hashtag"
+  },
+  {
+    title: "Notifications",
+    href: "#",
+    iconClasses: "fa fa-bell"
+  },
+  {
+    title: "Messages",
+    href: "#",
+    iconClasses: "fas fa-envelope"
+  },
+  {
+    title: "Bookmarks",
+    href: "#",
+    iconClasses: "fas fa-bookmark"
+  },
+  {
+    title: "Lists",
+    href: "#",
+    iconClasses: "fas fa-list"
+  },
+  {
+    title: "Profile",
+    href: "#",
+    iconClasses: "fas fa-user"
+  },
+  {
+    title: "More",
+    href: "#",
+    iconClasses: "fas fa-ellipsis-h"
+  }
+]
+
+export default pages
