@@ -1,18 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const HelloWorld = () => {
+const Tuiter = () => {
   return (
     <>
-      <h1>Hello World!</h1>
+      <h1>Tuiter</h1>
+      <Link to="/hello">
+        Hello
+      </Link> |
       <Link to="/labs">
         Labs
-      </Link> |
-      <Link to="/tuiter">
-        Tuiter
       </Link>
     </>
   )
 };
 
-export default HelloWorld;
+export default Tuiter;
