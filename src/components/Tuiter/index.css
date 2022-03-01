@@ -1,0 +1,181 @@
+:root {
+  --wd-light-grey: #5b656b;
+  --wd-mid-grey: rgb(47, 51, 54);
+  --wd-dark-grey: #1F1F1F;
+  --wd-interactive-blue: rgb(29, 161, 242);
+}
+
+p {
+  margin: 0;
+}
+
+.wd-color-white {
+  color: white;
+}
+
+.wd-color-light-grey {
+  color: var(--wd-light-grey);
+}
+
+.wd-color-mid-grey {
+  color: var(--wd-mid-grey);
+}
+
+.wd-color-dark-grey {
+  color: var(--wd-dark-grey);
+}
+
+.wd-color-interactive-blue {
+  color: var(--wd-interactive-blue);
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: sans-serif;
+}
+
+#tuiter-nav {
+  padding: 1em 1em 0;
+}
+
+#tuiter-nav .list-group {
+  max-width: fit-content;
+  margin: 0 0 0 auto;
+}
+
+#tuiter-nav .list-group-item {
+  background-color: var(--wd-dark-grey);
+  border: none;
+  color: white;
+  font-weight: 300;
+  padding: 0.75em 1em;
+}
+
+#tuiter-nav .list-group-item:first-of-type {
+  border-radius: 0.5em 0.5em 0 0;
+}
+
+#tuiter-nav .list-group-item:last-of-type {
+  border-radius: 0 0 0.5em 0.5em;
+}
+
+#tuiter-nav .active {
+  background-color: var(--wd-interactive-blue);
+  font-weight: 700;
+}
+
+#tuiter-nav .btn-primary {
+  border-radius: 2em;
+  background-color: var(--wd-interactive-blue);
+  padding: 0.5em 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+#tuiter-nav i {
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  margin-right: 1em;
+}
+
+#tuiter-nav span {
+  margin-right: 0.5em;
+}
+
+#tuiter-follow-recommendations .card {
+  width: fit-content;
+  color: white;
+  background-color: var(--wd-dark-grey);
+  margin: 1em;
+  padding: 1em;
+}
+
+#tuiter-follow-recommendations h5 {
+  font-weight: 600;
+  margin-bottom: 1em;
+}
+
+#tuiter-follow-recommendations a {
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.tuiter-follow-recommendation-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5em;
+}
+
+.tuiter-follow-recommendation-item img {
+  width: 3em;
+  height: 3em;
+  border-radius: 1.5em;
+  object-fit: cover;
+}
+
+.tuiter-follow-recommendation-item div {
+  margin: 0 0.5em;
+  text-align: left;
+  color: var(--wd-light-grey);
+}
+
+.profile-summary {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.profile-summary img {
+  margin-right: 0.5em;
+}
+
+.profile-summary b {
+  color: white;
+}
+
+.tuiter-follow-recommendation-item .btn {
+  color: white;
+  background-color: var(--wd-interactive-blue);
+  padding: 0.5em 1.5em;
+  border-radius: 2em;
+  font-size: 14px;
+}
+
+.wd-post-summary__post {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em 1em 0;
+}
+
+.wd-post-summary__post:last-child {
+  padding-bottom: 1em;
+}
+
+.wd-post-summary__image {
+  width: 4em;
+  height: 4em;
+  border-radius: 0.5em;
+  object-fit: cover;
+  object-position: center;
+}
+
+.wd-post__annotations {
+  font-size: 13px;
+  color: rgb(110, 118, 125);
+}
+
+.wd-post__author {
+  font-size: 14px;
+  color: white;
+  font-weight: 500;
+}
+
+.wd-post__title {
+  font-size: 14px;
+  font-weight: 600;
+}

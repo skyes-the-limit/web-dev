@@ -1,0 +1,27 @@
+[
+  {
+    "avatarIcon": "https://mpng.subpng.com/20180517/zve/kisspng-java-programmer-computer-programming-logo-5afe2f1dcf9897.0745314915266076458503.jpg",
+    "userName": "Java",
+    "handle": "Java"
+  },
+  {
+    "avatarIcon": "https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/j3dbh6kok0dket3uz2vy",
+    "userName": "Relativity Space",
+    "handle": "relativityspace"
+  },
+  {
+    "avatarIcon": "https://1000logos.net/wp-content/uploads/2020/09/Virgin-Galactic-Emblem.jpg",
+    "userName": "Virgin Galactic",
+    "handle": "virgingalactic"
+  },
+  {
+    "avatarIcon": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/2449px-NASA_logo.svg.png",
+    "userName": "NASA",
+    "handle": "NASA"
+  },
+  {
+    "avatarIcon": "https://storage.googleapis.com/webdesignledger.pub.network/WDL/12f213e1-t1.jpg",
+    "userName": "Tesla",
+    "handle": "Tesla"
+  }
+]
