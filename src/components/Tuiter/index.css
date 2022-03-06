@@ -6,7 +6,8 @@
 }
 
 p {
-  margin: 0;
+  /* TODO: Solve import order of bootstrap supersceding module styles */
+  margin: 0 !important;
 }
 
 .wd-color-white {
