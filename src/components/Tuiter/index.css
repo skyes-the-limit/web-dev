@@ -77,11 +77,10 @@ body {
   width: 1em;
   height: 1em;
   text-align: center;
-  margin-right: 1em;
 }
 
 #tuiter-nav span {
-  margin-right: 0.5em;
+  margin-left: 0.5em;
 }
 
 #tuiter-follow-recommendations .card {

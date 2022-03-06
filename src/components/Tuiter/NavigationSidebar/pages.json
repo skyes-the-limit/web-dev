@@ -2,7 +2,7 @@
   {
     "title": "Home",
     "href": "../HomeScreen/index.html",
-    "iconClasses": "fa-solid fa-house"
+    "iconClasses": "fas fa-home"
   },
   {
     "title": "Explore",
