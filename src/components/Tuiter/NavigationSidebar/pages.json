@@ -1,42 +1,42 @@
 [
   {
     "title": "Home",
-    "href": "../HomeScreen/index.html",
+    "href": "/tuiter/home",
     "iconClasses": "fas fa-home"
   },
   {
     "title": "Explore",
-    "href": "../ExploreScreen/index.html",
+    "href": "/tuiter/explore",
     "iconClasses": "fa fa-hashtag"
   },
   {
     "title": "Notifications",
-    "href": "#",
+    "href": "/",
     "iconClasses": "fa fa-bell"
   },
   {
     "title": "Messages",
-    "href": "#",
+    "href": "/",
     "iconClasses": "fas fa-envelope"
   },
   {
     "title": "Bookmarks",
-    "href": "#",
+    "href": "/",
     "iconClasses": "fas fa-bookmark"
   },
   {
     "title": "Lists",
-    "href": "#",
+    "href": "/",
     "iconClasses": "fas fa-list"
   },
   {
     "title": "Profile",
-    "href": "#",
+    "href": "/",
     "iconClasses": "fas fa-user"
   },
   {
     "title": "More",
-    "href": "#",
+    "href": "/",
     "iconClasses": "fas fa-ellipsis-h"
   }
 ]
