@@ -9,12 +9,9 @@ const WhoToFollowList = () => {
     >
       <div className="card">
         <h5>Who to follow</h5>
-        {
-          who.map(item => {
-            return <WhoToFollowListItem who={item} key={item.handle} />;
-          })
-        }
-        <a href="#">Show more</a>
+        {who.map(item => {
+          return <WhoToFollowListItem who={item} key={item.handle} />;
+        })}
       </div>
     </div>
   );

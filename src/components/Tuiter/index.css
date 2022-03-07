@@ -1,7 +1,7 @@
 :root {
   --wd-light-grey: #5b656b;
   --wd-mid-grey: rgb(47, 51, 54);
-  --wd-dark-grey: #1F1F1F;
+  --wd-dark-grey: #1f1f1f;
   --wd-interactive-blue: rgb(29, 161, 242);
 }
 
@@ -15,7 +15,8 @@ p {
 }
 
 .wd-color-light-grey {
-  color: var(--wd-light-grey);
+  /* TODO: Solve import order of bootstrap supersceding module styles */
+  color: var(--wd-light-grey) !important;
 }
 
 .wd-color-mid-grey {
@@ -107,6 +108,9 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+
+.tuiter-follow-recommendation-item:not(:last-child) {
   margin-bottom: 1.5em;
 }
 
