@@ -44,11 +44,11 @@ const PostItem = ({ author, description, imageSrc, link, timeStamp, interactions
         }
         <div className="wd-post__interactions d-flex justify-content-between">
           <div>
-            <i className="fa-regular fa-comment"></i>
+            <i className="far fa-comment"></i>
             {interactionsCount.comments}
           </div>
           <div>
-            <i className="fa-solid fa-arrow-right-arrow-left"></i>
+            <i className="fas fa-redo"></i>
             {interactionsCount.retweets}
           </div>
           <div>
