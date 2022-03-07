@@ -1,13 +1,14 @@
 import React from "react";
 
 import ExploreScreen from "./ExploreScreen";
+import HomeScreen from "./HomeScreen";
 
 import "./index.css"
 
 const Tuiter = () => {
   return (
     <div class="row">
-      <ExploreScreen />
+      <HomeScreen />
     </div>
   )
 };
