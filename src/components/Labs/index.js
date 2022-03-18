@@ -5,6 +5,7 @@ import Styles from "./Styles";
 import Classes from "./Classes";
 import ConditionalOutput from "./ConditionalOutput";
 import TodoList from "./Todo/TodoList";
+import ReduxExamples from "./redux-examples";
 
 const Labs = () => {
   return (
@@ -17,10 +18,11 @@ const Labs = () => {
         Tuiter
       </Link>
 
-      <Styles />
+      {/* <Styles />
       <Classes />
       <ConditionalOutput />
-      <TodoList />
+      <TodoList /> */}
+      <ReduxExamples />
     </div>
   )
 };
