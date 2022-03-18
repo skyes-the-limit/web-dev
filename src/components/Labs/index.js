@@ -11,10 +11,10 @@ const Labs = () => {
   return (
     <div>
       <h1>Labs</h1>
-      <Link to="/labs">
-        Labs
+      <Link to="/hello">
+        HelloWorld
       </Link> |
-      <Link to="/tuiter/home">
+      <Link to="/tuiter">
         Tuiter
       </Link>
 

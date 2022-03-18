@@ -1,7 +1,7 @@
 [
   {
     "title": "Home",
-    "href": "/tuiter/home",
+    "href": "/tuiter",
     "iconClasses": "fas fa-home"
   },
   {
