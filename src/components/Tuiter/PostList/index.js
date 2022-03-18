@@ -9,7 +9,7 @@ const PostList = () => {
   return (
     <div className="wd-post-list">
       {posts.map(post => {
-        return (PostItem(post));
+        return <PostItem post={post} key={post._id}/>
       })}
     </div>
   );

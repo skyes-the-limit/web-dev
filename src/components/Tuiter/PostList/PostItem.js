@@ -1,23 +1,25 @@
 import React from 'react'
 
-const PostItem = ({ author, description, imageSrc, link, timeStamp, interactionsCount }) => {
+const DEFAULT_PROFILE = "https://www.smilisticdental.com/wp-content/uploads/2017/11/blank-profile-picture-973460_960_720.png"
+
+const PostItem = ({ post: { _id, postedBy, tuit, imageSrc, link, timeStamp, stats } }) => {
   return (
     <div className="wd-post-item d-flex">
       <img
-        src={author.profileImgSrc}
+        src={postedBy.profileImgSrc || DEFAULT_PROFILE}
         className="wd-post__profileImage"
-        alt={`${author}'s profile`}
+        alt={`${postedBy.username}'s profile`}
       />
       <div>
         <div>
           <p className="wd-post__annotations">
-            <span className="wd-post__author">{author.name}</span>
-            <span>{author.handle}</span>
+            <span className="wd-post__postedBy">{postedBy.username}</span>
+            <span>{postedBy.handle}</span>
             {timeStamp &&
               <span>&nbsp;•&nbsp;{timeStamp}</span>
             }
           </p>
-          <p>{description}</p>
+          <p>{tuit}</p>
         </div>
         {link &&
           <div className="wd-post__link">
@@ -45,15 +47,15 @@ const PostItem = ({ author, description, imageSrc, link, timeStamp, interactions
         <div className="wd-post__interactions d-flex justify-content-between">
           <div>
             <i className="far fa-comment"></i>
-            {interactionsCount.comments}
+            {stats.replies}
           </div>
           <div>
             <i className="fas fa-redo"></i>
-            {interactionsCount.retweets}
+            {stats.retuits}
           </div>
           <div>
             <i className="far fa-heart"></i>
-            {interactionsCount.likes}
+            {stats.likes}
           </div>
           <div>
             <i className="far fa-share-square"></i>

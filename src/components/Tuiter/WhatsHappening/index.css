@@ -1,0 +1,12 @@
+#whats-happening textarea {
+  color: var(--wd-light-grey);
+  background-color: var(--wd-dark-grey);
+  border: none;
+  border-radius: 0.5em;
+  width: 100%;
+  padding: 0.5em 1em;
+}
+
+#whats-happening button {
+  border-radius: 2em;
+}
