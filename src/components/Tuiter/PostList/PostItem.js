@@ -5,7 +5,6 @@ const DEFAULT_PROFILE = "https://www.smilisticdental.com/wp-content/uploads/2017
 
 const PostItem = ({ post }) => {
   const { postedBy, tuit, imageSrc, link, timeStamp, stats } = post
-  console.log(post)
   const dispatch = useDispatch();
   const deleteTuit = (tuit) => {
     dispatch({ type: 'delete-tuit', tuit })
