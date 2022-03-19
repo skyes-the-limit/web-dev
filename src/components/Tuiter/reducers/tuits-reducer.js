@@ -2,6 +2,8 @@ import tuits from "../data/tuits.json";
 
 const tuitsReducer = (state = tuits, action) => {
   switch (action.type) {
+    case 'delete-tuit':
+      return state.filter(tuit => tuit._id !== action.tuit._id);
     case 'create-tuit':
       const newTuit = {
         tuit: action.tuit,

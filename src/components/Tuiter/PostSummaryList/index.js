@@ -7,7 +7,7 @@ const PostSummaryList = () => {
   return (
     <div id="wd-explore-post-list">
       {posts.map(post => {
-        return (PostSummaryItem(post));
+        return <PostSummaryItem post={post} />
       })}
     </div>
   );

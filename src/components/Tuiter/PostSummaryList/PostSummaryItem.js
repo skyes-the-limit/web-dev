@@ -8,7 +8,7 @@ const defaultPost = {
   image: "https://www.pinclipart.com/picdir/middle/537-5374089_react-js-logo-clipart.png"
 }
 
-const PostSummaryItem = ({ image, time, title, topic, userName } = defaultPost) => {
+const PostSummaryItem = ({ post: { image, time, title, topic, userName } = defaultPost }) => {
   return (
     <div className="wd-post-summary__post">
       <div className="me-1">

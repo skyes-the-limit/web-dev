@@ -1,8 +1,17 @@
 import React from 'react'
+import { useDispatch } from "react-redux";
 
 const DEFAULT_PROFILE = "https://www.smilisticdental.com/wp-content/uploads/2017/11/blank-profile-picture-973460_960_720.png"
 
-const PostItem = ({ post: { _id, postedBy, tuit, imageSrc, link, timeStamp, stats } }) => {
+const PostItem = ({ post }) => {
+  const { postedBy, tuit, imageSrc, link, timeStamp, stats } = post
+  console.log(post)
+  const dispatch = useDispatch();
+  const deleteTuit = (tuit) => {
+    dispatch({ type: 'delete-tuit', tuit })
+  };
+
+
   return (
     <div className="wd-post-item d-flex">
       <img
@@ -18,6 +27,11 @@ const PostItem = ({ post: { _id, postedBy, tuit, imageSrc, link, timeStamp, stat
             {timeStamp &&
               <span>&nbsp;•&nbsp;{timeStamp}</span>
             }
+            <i
+              onClick={() => deleteTuit(post)}
+              className="fas fa-times fa-pull-right"
+            ></i>
+
           </p>
           <p>{tuit}</p>
         </div>
