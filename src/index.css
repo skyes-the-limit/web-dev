@@ -31,6 +31,10 @@ p {
   color: var(--wd-interactive-blue);
 }
 
+.wd-color-red {
+  color: red
+}
+
 body {
   background-color: black;
   color: white;

@@ -1,10 +1,11 @@
 import React from 'react'
 import { useDispatch } from "react-redux";
+import TuitStats from '../TuitStats';
 
 const DEFAULT_PROFILE = "https://www.smilisticdental.com/wp-content/uploads/2017/11/blank-profile-picture-973460_960_720.png"
 
 const PostItem = ({ post }) => {
-  const { postedBy, tuit, imageSrc, link, timeStamp, stats } = post
+  const { postedBy, tuit, imageSrc, link, timeStamp } = post
   const dispatch = useDispatch();
   const deleteTuit = (tuit) => {
     dispatch({ type: 'delete-tuit', tuit })
@@ -57,23 +58,7 @@ const PostItem = ({ post }) => {
             alt=""
           />
         }
-        <div className="wd-post__interactions d-flex justify-content-between">
-          <div>
-            <i className="far fa-comment"></i>
-            {stats.replies}
-          </div>
-          <div>
-            <i className="fas fa-redo"></i>
-            {stats.retuits}
-          </div>
-          <div>
-            <i className="far fa-heart"></i>
-            {stats.likes}
-          </div>
-          <div>
-            <i className="far fa-share-square"></i>
-          </div>
-        </div>
+        <TuitStats post={post} />
       </div>
     </div>
   );
