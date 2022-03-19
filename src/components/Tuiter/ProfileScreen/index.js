@@ -16,7 +16,7 @@ const ProfileScreen = () => {
       id="wd-profile"
       className='d-flex flex-column'
     >
-      <div className='d-flex justify-content-between mb-2'>
+      <div className='profile-header-container'>
         <div className='d-flex align-items-center'>
           <div className='me-4'>
             {editing ?
@@ -46,7 +46,7 @@ const ProfileScreen = () => {
 
       <img className='profile-bannerPicture' src={bannerPicture} alt={`${firstName}'s banner`} />
 
-      <div className='d-flex justify-content-between'>
+      <div className='d-flex justify-content-between px-2'>
         <img className='profile-profilePicture' src={profilePicture} alt={`${firstName}'s profile`} />
         {!editing &&
           <button
@@ -58,7 +58,9 @@ const ProfileScreen = () => {
         }
       </div>
 
-      {editing ? <EditProfile /> : <ViewProfile />}
+      <div className='px-2'>
+        {editing ? <EditProfile /> : <ViewProfile />}
+      </div>
     </div>
   )
 }
