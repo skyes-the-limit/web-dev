@@ -4,13 +4,14 @@ import { Provider } from "react-redux";
 
 import whoReducer from "./reducers/who-reducer";
 import tuitsReducer from "./reducers/tuits-reducer";
+import profileReducer from "./reducers/profile-reducer"
 import NavigationSidebar from "./NavigationSidebar";
 import WhoToFollowList from "./WhoToFollowList";
 
 import "./tuiter.css";
 
 const reducer = combineReducers({
-  tuits: tuitsReducer, who: whoReducer
+  tuits: tuitsReducer, who: whoReducer, profile: profileReducer
 });
 const store = createStore(reducer);
 

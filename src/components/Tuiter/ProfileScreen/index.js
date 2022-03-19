@@ -1,11 +1,15 @@
 import React, { useState } from 'react'
+import { useSelector } from "react-redux";
+
 import EditProfile from './EditProfile'
+import ViewProfile from './ViewProfile'
 
 import './index.css'
-import ViewProfile from './ViewProfile'
 
 const ProfileScreen = () => {
   let [editing, setEditing] = useState(false)
+  const profile = useSelector(state => state.profile);
+  console.log(profile)
 
   return (
     <div
@@ -13,7 +17,7 @@ const ProfileScreen = () => {
     >
       {editing ?
         <i className="fas fa-times"></i> :
-        <i class="fas fa-arrow-left"></i>
+        <i className="fas fa-arrow-left"></i>
       }
       <h2>{editing ? "Edit profile" : "USERNAME"}</h2>
       {editing &&
