@@ -10,6 +10,7 @@ import './vendors/bootstrap/bootstrap.min.css';
 import './vendors/fontawesome/css/all.min.css';
 import './index.css'
 import Tuiter from "./components/Tuiter";
+import ProfileScreen from "./components/Tuiter/ProfileScreen";
 
 const Navigation = () => {
   return (
@@ -33,7 +34,7 @@ function App() {
             <Route path="tuiter" element={<Tuiter />}>
               <Route index element={<HomeScreen />} />
               <Route path="explore" element={<ExploreScreen />} />
-              {/* <Route path="notifications" element={<NotificationScreen />} /> */}
+              <Route path="profile" element={<ProfileScreen />} />
             </Route>
           </Route>
         </Routes>
