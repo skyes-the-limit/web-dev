@@ -5,29 +5,36 @@ import './index.css'
 
 const ViewProfile = () => {
   const profile = useSelector(state => state.profile);
-  const { firstName, lastName, handle, bio, website, location, dateOfBirth, dateJoined, followingCount, followersCount } = profile
+  const { name, handle, bio, /*website, */location, dateOfBirth, dateJoined, followingCount, followersCount } = profile
+  // TODO: How should website be displayed?
+
+  const dateFormatOptions = { month: "long", day: "numeric", year: "numeric" };
+  const dobDate = new Date(dateOfBirth)
+  const dobDateStr = new Intl.DateTimeFormat("en-US", dateFormatOptions).format(dobDate);
+  const joinedDate = new Date(dateJoined)
+  const joinedDateStr = new Intl.DateTimeFormat("en-US", dateFormatOptions).format(joinedDate);
 
   return (
     <div
       id="wd-profile"
       className='py-2'
     >
-      <h6 className='profile-name'>{firstName} {lastName}</h6>
+      <h6 className='profile-name'>{name}</h6>
       <div className='profile-handle'>@{handle}</div>
       <div className='profile-bio'>{bio}</div>
 
       <div className='profile-demographics'>
         <span>
-          <i class="fas fa-map-marker-alt"></i>
+          <i className="fas fa-map-marker-alt"></i>
           {location}
         </span>
         <span>
-          <i class="fas fa-birthday-cake"></i>
-          Born {dateOfBirth}
+          <i className="fas fa-birthday-cake"></i>
+          Born {dobDateStr}
         </span>
         <span>
-          <i class="fas fa-calendar-alt"></i>
-          Joined {dateJoined}
+          <i className="fas fa-calendar-alt"></i>
+          Joined {joinedDateStr}
         </span>
       </div>
 

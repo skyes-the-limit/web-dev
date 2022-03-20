@@ -5,6 +5,10 @@
   height: 45px;
 }
 
+.profile-header-container {
+  cursor: pointer;
+}
+
 .profile-header {
   font-size: 20px;
   margin-bottom: 0;
@@ -84,4 +88,28 @@
 
 .profile-stats b {
   color: white;
+}
+
+.profile-edit-field {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2em;
+}
+
+.profile-edit-field label {
+  z-index: 1;
+  padding: 0 16px;
+  font-size: 14px;
+  color: var(--wd-light-grey)
+}
+
+.profile-edit-field textarea,
+.profile-edit-field input {
+  width: 100%;
+  margin-top: -2em;
+  padding: 2em 1em 0.5em;
+  border-radius: 0.5em;
+  color: white;
+  background-color: black;
+  border: 1px solid var(--wd-dark-grey);
 }
