@@ -1,7 +1,7 @@
 [
   {
     "title": "Home",
-    "href": "/tuiter/home",
+    "href": "/tuiter",
     "iconClasses": "fas fa-home"
   },
   {
@@ -31,7 +31,7 @@
   },
   {
     "title": "Profile",
-    "href": "/",
+    "href": "/tuiter/profile",
     "iconClasses": "fas fa-user"
   },
   {

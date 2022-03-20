@@ -1,23 +1,39 @@
 import React from 'react'
+import { useDispatch } from "react-redux";
+import TuitStats from '../TuitStats';
 
-const PostItem = ({ author, description, imageSrc, link, timeStamp, interactionsCount }) => {
+const DEFAULT_PROFILE = "https://www.smilisticdental.com/wp-content/uploads/2017/11/blank-profile-picture-973460_960_720.png"
+
+const PostItem = ({ post }) => {
+  const { postedBy, tuit, imageSrc, link, timeStamp } = post
+  const dispatch = useDispatch();
+  const deleteTuit = (tuit) => {
+    dispatch({ type: 'delete-tuit', tuit })
+  };
+
+
   return (
     <div className="wd-post-item d-flex">
       <img
-        src={author.profileImgSrc}
+        src={postedBy.profileImgSrc || DEFAULT_PROFILE}
         className="wd-post__profileImage"
-        alt={`${author}'s profile`}
+        alt={`${postedBy.username}'s profile`}
       />
       <div>
         <div>
           <p className="wd-post__annotations">
-            <span className="wd-post__author">{author.name}</span>
-            <span>{author.handle}</span>
+            <span className="wd-post__postedBy">{postedBy.username}</span>
+            <span>{postedBy.handle}</span>
             {timeStamp &&
               <span>&nbsp;•&nbsp;{timeStamp}</span>
             }
+            <i
+              onClick={() => deleteTuit(post)}
+              className="fas fa-times fa-pull-right"
+            ></i>
+
           </p>
-          <p>{description}</p>
+          <p>{tuit}</p>
         </div>
         {link &&
           <div className="wd-post__link">
@@ -42,23 +58,7 @@ const PostItem = ({ author, description, imageSrc, link, timeStamp, interactions
             alt=""
           />
         }
-        <div className="wd-post__interactions d-flex justify-content-between">
-          <div>
-            <i className="far fa-comment"></i>
-            {interactionsCount.comments}
-          </div>
-          <div>
-            <i className="fas fa-redo"></i>
-            {interactionsCount.retweets}
-          </div>
-          <div>
-            <i className="far fa-heart"></i>
-            {interactionsCount.likes}
-          </div>
-          <div>
-            <i className="far fa-share-square"></i>
-          </div>
-        </div>
+        <TuitStats post={post} />
       </div>
     </div>
   );

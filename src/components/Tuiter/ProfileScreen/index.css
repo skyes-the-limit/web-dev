@@ -1,0 +1,115 @@
+.profile-header-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5em;
+  height: 45px;
+}
+
+.profile-header-container {
+  cursor: pointer;
+}
+
+.profile-header {
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+.profile-tweetCount {
+  color: var(--wd-light-grey);
+  font-size: 14px;
+}
+
+.profile-bannerPicture {
+  width: 100%;
+  height: 8em;
+  object-fit: cover;
+}
+
+.profile-profilePicture {
+  margin-top: -3em;
+  width: 6em;
+  height: 6em;
+  border-radius: 3em;
+  border: 4px solid black;
+}
+
+.edit-image {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.btn-secondary {
+  margin-top: 0.5em;
+  border-radius: 2em;
+  background-color: black;
+  border: 2pm solid white;
+}
+
+.btn-light {
+  border-radius: 2em;
+  background-color: white;
+  color: black;
+}
+
+.profile-name {
+  font-size: 18px;
+  margin: 0;
+}
+
+.profile-handle {
+  font-size: 14px;
+  color: var(--wd-light-grey);
+}
+
+.profile-bio {
+  margin-top: 0.5em;
+}
+
+.profile-demographics {
+  margin-top: 0.5em;
+  color: var(--wd-light-grey);
+}
+
+.profile-demographics i {
+  margin-right: 0.5em;
+}
+
+.profile-demographics span:not(:last-child) {
+  margin-right: 1em;
+}
+
+.profile-stats {
+  margin-top: 0.5em;
+  color: var(--wd-light-grey);
+}
+
+.profile-stats span:not(:last-child) {
+  margin-right: 1em;
+}
+
+.profile-stats b {
+  color: white;
+}
+
+.profile-edit-field {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2em;
+}
+
+.profile-edit-field label {
+  z-index: 1;
+  padding: 0 16px;
+  font-size: 14px;
+  color: var(--wd-light-grey)
+}
+
+.profile-edit-field textarea,
+.profile-edit-field input {
+  width: 100%;
+  margin-top: -2em;
+  padding: 2em 1em 0.5em;
+  border-radius: 0.5em;
+  color: white;
+  background-color: black;
+  border: 1px solid var(--wd-dark-grey);
+}
