@@ -4,8 +4,8 @@ import TuitStats from '../TuitStats';
 
 const DEFAULT_PROFILE = "https://www.smilisticdental.com/wp-content/uploads/2017/11/blank-profile-picture-973460_960_720.png"
 
-const PostItem = ({ post }) => {
-  const { postedBy, tuit, imageSrc, link, timeStamp } = post
+const TuitItem = ({ tuit }) => {
+  const { postedBy, content, imageSrc, link, timeStamp } = tuit
   const dispatch = useDispatch();
   const deleteTuit = (tuit) => {
     dispatch({ type: 'delete-tuit', tuit })
@@ -13,37 +13,37 @@ const PostItem = ({ post }) => {
 
 
   return (
-    <div className="wd-post-item d-flex">
+    <div className="wd-tuit-item d-flex">
       <img
         src={postedBy.profileImgSrc || DEFAULT_PROFILE}
-        className="wd-post__profileImage"
+        className="wd-tuit__profileImage"
         alt={`${postedBy.username}'s profile`}
       />
       <div>
         <div>
-          <p className="wd-post__annotations">
-            <span className="wd-post__postedBy">{postedBy.username}</span>
+          <p className="wd-tuit__annotations">
+            <span className="wd-tuit__postedBy">{postedBy.username}</span>
             <span>{postedBy.handle}</span>
             {timeStamp &&
               <span>&nbsp;•&nbsp;{timeStamp}</span>
             }
             <i
-              onClick={() => deleteTuit(post)}
+              onClick={() => deleteTuit(tuit)}
               className="fas fa-times fa-pull-right"
             ></i>
 
           </p>
-          <p>{tuit}</p>
+          <p>{content}</p>
         </div>
         {link &&
-          <div className="wd-post__link">
+          <div className="wd-tuit__link">
             <img
               src={link.previewImageSrc}
-              className="wd-post__image wd-post__link-image"
+              className="wd-tuit__image wd-tuit__link-image"
               alt=""
             />
-            <div className="wd-post__link-text">
-              <p className="wd-post__link-title">{link.previewTitle}</p>
+            <div className="wd-tuit__link-text">
+              <p className="wd-tuit__link-title">{link.previewTitle}</p>
               <p>{link.previewDescription}</p>
               <p>
                 <a href={`https://${link.baseUrl}`} target="_blank" rel="noreferrer">{link.baseUrl}</a>
@@ -54,14 +54,14 @@ const PostItem = ({ post }) => {
         {imageSrc &&
           <img
             src={imageSrc}
-            className="wd-post__image"
+            className="wd-tuit__image"
             alt=""
           />
         }
-        <TuitStats post={post} />
+        <TuitStats tuit={tuit} />
       </div>
     </div>
   );
 }
 
-export default PostItem;
+export default TuitItem;

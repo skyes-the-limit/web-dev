@@ -1,7 +1,7 @@
-import tuits from "../data/tuits.json";
-
-const tuitsReducer = (state = tuits, action) => {
+const tuitsReducer = (state = [], action) => {
   switch (action.type) {
+    case 'FIND_ALL_TUITS':
+      return action.tuits;
     case 'like-tuit':
       return state.map(tuit => {
         if (tuit._id === action.tuit._id) {
@@ -34,7 +34,7 @@ const tuitsReducer = (state = tuits, action) => {
       }
       return [newTuit, ...state,];
     default:
-      return tuits
+      return state
   }
 }
 

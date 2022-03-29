@@ -1,6 +1,6 @@
 import React from 'react'
 
-const defaultPost = {
+const defaultTuit = {
   topic: "Web Development",
   userName: "ReactJS",
   time: "2h",
@@ -8,27 +8,27 @@ const defaultPost = {
   image: "https://www.pinclipart.com/picdir/middle/537-5374089_react-js-logo-clipart.png"
 }
 
-const PostSummaryItem = ({ post: { image, time, title, topic, userName } = defaultPost }) => {
+const TuitSummaryItem = ({ tuit: { image, time, title, topic, userName } = defaultTuit }) => {
   return (
-    <div className="wd-post-summary__post">
+    <div className="wd-tuit-summary__tuit">
       <div className="me-1">
-        <p className="wd-post__annotations">
+        <p className="wd-tuit__annotations">
           <span>{topic}</span>
         </p>
-        <p className="wd-post__annotations">
-          <span className="wd-post__author">{userName}</span>
+        <p className="wd-tuit__annotations">
+          <span className="wd-tuit__author">{userName}</span>
           <span>&nbsp;•&nbsp;</span>
           <span>{time}</span>
         </p>
-        <p className="wd-post__title">{title}</p>
+        <p className="wd-tuit__title">{title}</p>
       </div>
       <img
         src={image}
-        className="wd-post-summary__image"
+        className="wd-tuit-summary__image"
         alt=""
       />
     </div>
   );
 }
 
-export default PostSummaryItem;
+export default TuitSummaryItem;

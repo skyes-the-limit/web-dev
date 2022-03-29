@@ -153,18 +153,18 @@ body {
   font-size: 14px;
 }
 
-.wd-post-summary__post {
+.wd-tuit-summary__tuit {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1em 1em 0;
 }
 
-.wd-post-summary__post:last-child {
+.wd-tuit-summary__tuit:last-child {
   padding-bottom: 1em;
 }
 
-.wd-post-summary__image {
+.wd-tuit-summary__image {
   width: 4em;
   height: 4em;
   border-radius: 0.5em;
@@ -172,19 +172,19 @@ body {
   object-position: center;
 }
 
-.wd-post__annotations {
+.wd-tuit__annotations {
   font-size: 13px;
   color: rgb(110, 118, 125);
 }
 
-.wd-post__author {
+.wd-tuit__author {
   font-size: 14px;
   color: white;
   font-weight: 500;
   margin-right: 0.5em;
 }
 
-.wd-post__title {
+.wd-tuit__title {
   font-size: 14px;
   font-weight: 600;
 }

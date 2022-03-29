@@ -12,15 +12,15 @@ const numFormatter = (num) => {
   }
 }
 
-const TuitStats = ({ post }) => {
-  const { stats, liked } = post
+const TuitStats = ({ tuit }) => {
+  const { stats, liked } = tuit
   const dispatch = useDispatch();
   const likeTuit = (tuit) => {
     dispatch({ type: 'like-tuit', tuit });
   };
 
   return (
-    <div className="wd-post__interactions d-flex justify-content-between">
+    <div className="wd-tuit__interactions d-flex justify-content-between">
       <div>
         <i className="far fa-comment"></i>
         {numFormatter(stats.replies)}
@@ -29,7 +29,7 @@ const TuitStats = ({ post }) => {
         <i className="fas fa-redo"></i>
         {numFormatter(stats.retuits)}
       </div>
-      <div onClick={() => likeTuit(post)}>
+      <div onClick={() => likeTuit(tuit)}>
         <i className={cx("far fa-heart", liked ? 'wd-color-red' : '')}></i>
         {numFormatter(stats.likes)}
       </div>
