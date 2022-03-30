@@ -1,16 +1,14 @@
 import React from 'react'
-import { useDispatch } from "react-redux";
+import { useDispatch } from 'react-redux';
+
 import TuitStats from '../TuitStats';
+import { deleteTuit } from "../actions/tuits-actions";
 
 const DEFAULT_PROFILE = "https://www.smilisticdental.com/wp-content/uploads/2017/11/blank-profile-picture-973460_960_720.png"
 
 const TuitItem = ({ tuit }) => {
   const { postedBy, content, imageSrc, link, timeStamp } = tuit
   const dispatch = useDispatch();
-  const deleteTuit = (tuit) => {
-    dispatch({ type: 'delete-tuit', tuit })
-  };
-
 
   return (
     <div className="wd-tuit-item d-flex">
@@ -28,7 +26,7 @@ const TuitItem = ({ tuit }) => {
               <span>&nbsp;•&nbsp;{timeStamp}</span>
             }
             <i
-              onClick={() => deleteTuit(tuit)}
+              onClick={() => deleteTuit(dispatch, tuit)}
               className="fas fa-times fa-pull-right"
             ></i>
 
