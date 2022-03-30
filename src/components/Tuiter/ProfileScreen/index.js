@@ -23,8 +23,6 @@ const ProfileScreen = () => {
   })
 
   const submitForm = (values) => {
-    console.log(values)
-
     dispatch({
       type: 'update-profile',
       profileData: values

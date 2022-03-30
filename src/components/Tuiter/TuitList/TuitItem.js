@@ -21,7 +21,7 @@ const TuitItem = ({ tuit }) => {
         <div>
           <p className="wd-tuit__annotations">
             <span className="wd-tuit__postedBy">{postedBy.username}</span>
-            <span>{postedBy.handle}</span>
+            <span>@{postedBy.handle}</span>
             {timeStamp &&
               <span>&nbsp;•&nbsp;{timeStamp}</span>
             }
