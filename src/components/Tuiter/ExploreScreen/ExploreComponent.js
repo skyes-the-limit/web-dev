@@ -1,6 +1,6 @@
 import React from 'react'
 
-import PostSummaryList from "../PostSummaryList/index.js";
+import TuitSummaryList from "../TuitSummaryList/index.js";
 
 const ExploreSearch = () => {
   return (
@@ -55,7 +55,7 @@ const ExploreComponent = () => {
         <div id="wd-explore-featured">
           <h4>SpaceX's Starship</h4>
         </div>
-        <PostSummaryList />
+        <TuitSummaryList />
       </div>
     </>
   );

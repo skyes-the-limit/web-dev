@@ -1,5 +1,8 @@
+import React, { useState } from 'react'
 import { useDispatch } from "react-redux";
 import cx from 'classnames'
+
+import { updateTuit } from "../actions/tuits-actions";
 
 // https://www.codegrepper.com/code-examples/javascript/javascript+convert+number+from+thousands+to+k+and+millions+to+m
 const numFormatter = (num) => {
@@ -12,15 +15,28 @@ const numFormatter = (num) => {
   }
 }
 
-const TuitStats = ({ post }) => {
-  const { stats, liked } = post
+const TuitStats = ({ tuit }) => {
+  const [stats, setStats] = useState(tuit.stats)
+  const [liked, setLiked] = useState(tuit.liked)
+
   const dispatch = useDispatch();
-  const likeTuit = (tuit) => {
-    dispatch({ type: 'like-tuit', tuit });
-  };
+  const likeTuit = () => {
+    const newStats = { ...stats, likes: liked ? stats.likes - 1 : stats.likes + 1 }
+    setStats(newStats)
+
+    const newLiked = !liked
+    setLiked(newLiked)
+
+    const newTuit = {
+      ...tuit,
+      stats: newStats,
+      liked: newLiked
+    }
+    updateTuit(dispatch, newTuit)
+  }
 
   return (
-    <div className="wd-post__interactions d-flex justify-content-between">
+    <div className="wd-tuit__interactions d-flex justify-content-between">
       <div>
         <i className="far fa-comment"></i>
         {numFormatter(stats.replies)}
@@ -29,14 +45,14 @@ const TuitStats = ({ post }) => {
         <i className="fas fa-redo"></i>
         {numFormatter(stats.retuits)}
       </div>
-      <div onClick={() => likeTuit(post)}>
+      <div onClick={() => likeTuit()}>
         <i className={cx("far fa-heart", liked ? 'wd-color-red' : '')}></i>
         {numFormatter(stats.likes)}
       </div>
       <div>
         <i className="far fa-share-square"></i>
       </div>
-    </div>
+    </div >
   );
 }
 

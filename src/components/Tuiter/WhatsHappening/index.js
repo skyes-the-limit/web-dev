@@ -1,18 +1,13 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 
+import { createTuit } from "../actions/tuits-actions";
+
 import "./index.css"
 
 const WhatsHappening = () => {
   let [whatsHappening, setWhatsHappening] = useState('');
   const dispatch = useDispatch();
-
-  const tuitClickHandler = () => {
-    dispatch({
-      type: 'create-tuit',
-      tuit: whatsHappening
-    });
-  }
 
   return (
     <div id="whats-happening">
@@ -22,7 +17,7 @@ const WhatsHappening = () => {
         placeholder="What's happening?"
       >
       </textarea>
-      <button className="btn btn-primary" onClick={tuitClickHandler}>
+      <button className="btn btn-primary" onClick={() => createTuit(dispatch, whatsHappening)}>
         Tuit
       </button>
     </div>
