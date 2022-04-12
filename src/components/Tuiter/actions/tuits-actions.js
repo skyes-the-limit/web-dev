@@ -6,7 +6,23 @@ export const UPDATE_TUIT = 'UPDATE_TUIT';
 export const DELETE_TUIT = 'DELETE_TUIT';
 
 export const createTuit = async (dispatch, tuit) => {
-  const newTuit = await service.createTuit({ content: tuit });
+
+
+  const newTuit = await service.createTuit({
+    content: tuit,
+    postedBy: {
+      username: "ReactJS",
+      handle: 'react-js',
+      profileImgSrc: 'https://reactjs.org/logo-og.png'
+    },
+    stats: {
+      retuits: 0,
+      likes: 0,
+      replies: 0
+    },
+    liked: false,
+    timeStamp: "just now"
+  });
   dispatch({
     type: CREATE_TUIT,
     newTuit
